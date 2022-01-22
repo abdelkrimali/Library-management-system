@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="532.0" prefWidth="552.0" style="-fx-background-color: #0b84b8;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.SettingController">
+   <children>
+      <Label layoutX="180.0" layoutY="14.0" prefHeight="38.0" prefWidth="255.0" text="Parametre Génerale " textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="99.0" prefHeight="23.0" prefWidth="222.0" text="Delai D'emprunt par jours :" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="jouremprunt" focusColor="#0ca836" layoutX="65.0" layoutY="137.0" maxWidth="321.0" minWidth="165.0" prefHeight="56.0" prefWidth="321.0">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="24.0" layoutY="208.0" prefHeight="23.0" prefWidth="222.0" text="Delai De Sanction :" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="delaisanction" focusColor="#0ca836" layoutX="60.0" layoutY="242.0" maxWidth="357.0" minWidth="165.0" prefHeight="56.0" prefWidth="321.0">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="30.0" layoutY="313.0" prefHeight="23.0" prefWidth="255.0" text=" retard avec valider le sanction :" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="validesanction" focusColor="#0ca836" layoutX="65.0" layoutY="350.0" maxWidth="321.0" minWidth="165.0" prefHeight="56.0" prefWidth="321.0">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnsave" layoutX="158.0" layoutY="441.0" onAction="#modifier" prefHeight="44.0" prefWidth="211.0" style="-fx-background-color: #180d5a;" text="Enregistrer" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="23.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="515.0" layoutY="15.0" onMouseClicked="#close" prefHeight="36.0" prefWidth="37.0" text="X" textFill="#ee1212">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

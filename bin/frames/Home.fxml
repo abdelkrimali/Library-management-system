@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="home" prefHeight="489.0" prefWidth="1087.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+   <children>
+      <JFXTabPane fx:id="tab" prefHeight="491.0" prefWidth="1190.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab text="Empraiter Livre">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane prefHeight="459.0" prefWidth="939.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <left>
+                              <AnchorPane prefHeight="457.0" prefWidth="1176.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Pane layoutX="54.0" layoutY="119.0" prefHeight="230.0" prefWidth="217.0" style="-fx-border-color: #00F;">
+                                       <children>
+                                          <Label layoutX="29.0" layoutY="48.0" text="Numéro Inscription " textFill="#2a0aab">
+                                             <font>
+                                                <Font name="SansSerif Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXTextField fx:id="txtnum" alignment="CENTER_RIGHT" depthTest="ENABLE" labelFloat="true" layoutX="14.0" layoutY="91.0" maxWidth="200.0" minWidth="164.0" onKeyPressed="#afficher_detaille" prefHeight="48.0" prefWidth="168.0" unFocusColor="#037546">
+                                             <font>
+                                                <Font name="SansSerif Bold" size="17.0" />
+                                             </font>
+                                          </JFXTextField>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="296.0" layoutY="119.0" prefHeight="230.0" prefWidth="322.0" style="-fx-border-color: #00F;">
+                                       <children>
+                                          <Label layoutX="130.0" layoutY="39.0" text="Nom">
+                                             <font>
+                                                <Font name="SansSerif Regular" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="97.0" layoutY="131.0" text="Departement">
+                                             <font>
+                                                <Font name="SansSerif Regular" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtnom" alignment="CENTER" editable="false" layoutX="56.0" layoutY="81.0" prefHeight="33.0" prefWidth="223.0">
+                                             <font>
+                                                <Font name="SansSerif Regular" size="15.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="txtdept" alignment="CENTER" editable="false" layoutX="56.0" layoutY="171.0" prefHeight="33.0" prefWidth="223.0">
+                                             <font>
+                                                <Font name="SansSerif Regular" size="15.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="643.0" layoutY="115.0" prefHeight="230.0" prefWidth="260.0" style="-fx-border-color: #00F;">
+                                       <children>
+                                          <Label layoutX="81.0" layoutY="39.0" text="Reference">
+                                             <font>
+                                                <Font name="SansSerif Regular" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="105.0" layoutY="131.0" text="Titre">
+                                             <font>
+                                                <Font name="SansSerif Regular" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtref" alignment="CENTER" layoutX="17.0" layoutY="83.0" onKeyPressed="#afficher_livre" prefHeight="33.0" prefWidth="213.0">
+                                             <font>
+                                                <Font name="SansSerif Regular" size="15.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="txttitre" alignment="CENTER" editable="false" layoutX="24.0" layoutY="171.0" prefHeight="33.0" prefWidth="213.0">
+                                             <font>
+                                                <Font name="SansSerif Regular" size="15.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </Pane>
+                                    <Label layoutX="104.0" layoutY="91.0" prefHeight="28.0" prefWidth="167.0" style="-fx-background-color: #00F;" text=" Numéro Emprainteur" textAlignment="JUSTIFY" textFill="WHITE">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="426.0" layoutY="91.0" prefHeight="28.0" prefWidth="192.0" style="-fx-background-color: #00F;" text="  Information Emprainteur" textAlignment="JUSTIFY" textFill="WHITE">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="750.0" layoutY="87.0" prefHeight="28.0" prefWidth="153.0" style="-fx-background-color: #00F;" text="    Information Livre  " textAlignment="JUSTIFY" textFill="WHITE">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton fx:id="btnemprunter" layoutX="374.0" layoutY="385.0" onAction="#emprunter" prefHeight="34.0" prefWidth="191.0" style="-fx-background-color: #39a67f;" text="Appliquer" textFill="WHITE">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <TableView fx:id="tblexemple" layoutX="916.0" layoutY="142.0" prefHeight="145.0" prefWidth="163.0">
+                                      <columns>
+                                        <TableColumn fx:id="id_exemple" prefWidth="85.0" text="Id" />
+                                          <TableColumn fx:id="etat_exemple" prefWidth="75.0" text="Etat" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </left>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Retourner Livre">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane prefHeight="459.0" prefWidth="939.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <top>
+                              <AnchorPane prefHeight="459.0" prefWidth="940.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label layoutX="407.0" layoutY="23.0" text=" Etudiant ">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Pane layoutX="45.0" layoutY="155.0" prefHeight="234.0" prefWidth="336.0" style="-fx-border-color: #00F;">
+                                       <children>
+                                          <Label layoutX="22.0" layoutY="25.0" prefHeight="26.0" prefWidth="116.0" text="Reference  :">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="22.0" layoutY="61.0" text="Date de  Pret   :">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="22.0" layoutY="97.0" prefHeight="26.0" prefWidth="116.0" text="Date Retour  :">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="22.0" layoutY="135.0" prefHeight="26.0" prefWidth="116.0" text="Aujourduit :">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="22.0" layoutY="177.0" prefHeight="26.0" prefWidth="116.0" text="Retard :">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lblref" layoutX="161.0" layoutY="25.0" prefHeight="26.0" prefWidth="167.0" textFill="#39a67f">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="datepret" layoutX="161.0" layoutY="61.0" prefHeight="26.0" prefWidth="167.0" textFill="#39a67f">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="dateretour" layoutX="161.0" layoutY="97.0" prefHeight="26.0" prefWidth="167.0" textFill="#39a67f">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="today" layoutX="161.0" layoutY="135.0" prefHeight="26.0" prefWidth="167.0" textFill="#39a67f">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="retard" layoutX="161.0" layoutY="177.0" prefHeight="26.0" prefWidth="167.0" textFill="#39a67f">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Label layoutX="222.0" layoutY="126.0" prefHeight="28.0" prefWidth="159.0" style="-fx-background-color: #00F;" text="   Information Livre" textAlignment="JUSTIFY" textFill="WHITE">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Pane layoutX="434.0" layoutY="154.0" prefHeight="236.0" prefWidth="377.0" style="-fx-border-color: #00F;">
+                                       <children>
+                                          <Label layoutX="24.0" layoutY="50.0" text="Nom :">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="24.0" layoutY="106.0" text="Prénom :">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="24.0" layoutY="165.0" text="Departement :">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lblnom" layoutX="169.0" layoutY="48.0" prefHeight="26.0" prefWidth="181.0" textFill="#39a67f">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lblprenom" layoutX="169.0" layoutY="103.0" prefHeight="26.0" prefWidth="176.0" textFill="#39a67f">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lbldept" layoutX="169.0" layoutY="163.0" prefHeight="26.0" prefWidth="181.0" textFill="#39a67f">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Label layoutX="640.0" layoutY="126.0" prefHeight="28.0" prefWidth="171.0" style="-fx-background-color: #00F;" text="  Information Etudiant" textAlignment="JUSTIFY" textFill="WHITE">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton layoutX="339.0" layoutY="411.0" onAction="#rendre_livre" prefHeight="34.0" prefWidth="191.0" style="-fx-background-color: #39a67f;" text="Appliquer" textFill="WHITE">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="19.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="txtetud" layoutX="320.0" layoutY="47.0" maxWidth="250.0" minWidth="214.0" onKeyPressed="#afficher_emprunt" prefHeight="44.0" prefWidth="250.0">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </JFXTextField>
+                                 </children>
+                              </AnchorPane>
+                           </top>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

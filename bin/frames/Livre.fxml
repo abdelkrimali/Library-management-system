@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="476.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LivreController">
+   <children>
+      <JFXTabPane prefHeight="476.0" prefWidth="942.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab text="Ajouter Ouvrage">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane prefHeight="441.0" prefWidth="942.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <left>
+                              <AnchorPane prefHeight="441.0" prefWidth="941.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Pane layoutX="112.0" layoutY="48.0" prefHeight="340.0" prefWidth="732.0" style="-fx-border-color: #199b06;">
+                                       <children>
+                                          <TextField fx:id="txtauteur" layoutX="287.0" layoutY="137.0" prefHeight="37.0" prefWidth="305.0">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="txttitre" layoutX="286.0" layoutY="88.0" prefHeight="37.0" prefWidth="308.0">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </TextField>
+                                          <Label layoutX="86.0" layoutY="241.0" prefHeight="35.0" prefWidth="200.0" text="Type :">
+                                             <font>
+                                                <Font name="SansSerif Regular" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <ComboBox fx:id="cbxcateg" editable="true" layoutX="286.0" layoutY="192.0" prefHeight="35.0" prefWidth="307.0" promptText="Selectioner une  categorie" />
+                                          <TextField fx:id="txtref" layoutX="287.0" layoutY="36.0" prefHeight="37.0" prefWidth="310.0">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </TextField>
+                                          <Label layoutX="86.0" layoutY="37.0" prefHeight="35.0" prefWidth="200.0" text="Reference Ouvrage *:">
+                                             <font>
+                                                <Font name="SansSerif Regular" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="86.0" layoutY="89.0" prefHeight="35.0" prefWidth="200.0" text="Titre :*">
+                                             <font>
+                                                <Font name="SansSerif Regular" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="86.0" layoutY="138.0" prefHeight="35.0" prefWidth="200.0" text="Auteur:*">
+                                             <font>
+                                                <Font name="SansSerif Regular" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="78.0" layoutY="192.0" prefHeight="35.0" prefWidth="200.0" text="Categorie :">
+                                             <font>
+                                                <Font name="SansSerif Regular" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <ComboBox fx:id="cbxtype" editable="true" layoutX="288.0" layoutY="251.0" prefHeight="35.0" prefWidth="307.0" promptText="Selectioner un type" />
+                                       </children>
+                                    </Pane>
+                                    <JFXButton layoutX="425.0" layoutY="396.0" onAction="#save" prefHeight="25.0" prefWidth="163.0" style="-fx-background-color: #39A67F;" text="Ajouter" textFill="WHITE">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="21.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label layoutX="112.0" layoutY="31.0" prefHeight="17.0" prefWidth="164.0" style="-fx-background-color: #00F;" text="Formulaire" textFill="WHITE">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </left>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Detaille Ouvrage">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane prefHeight="441.0" prefWidth="942.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <left>
+                              <AnchorPane prefHeight="441.0" prefWidth="941.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Pane layoutX="82.0" layoutY="81.0" prefHeight="297.0" prefWidth="704.0" style="-fx-border-color: #199b06;">
+                                       <children>
+                                          <Label layoutX="82.0" layoutY="207.0" prefHeight="35.0" prefWidth="200.0" text="Type :">
+                                             <font>
+                                                <Font name="SansSerif Regular" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="82.0" layoutY="55.0" prefHeight="35.0" prefWidth="200.0" text="Titre :*">
+                                             <font>
+                                                <Font name="SansSerif Regular" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="82.0" layoutY="104.0" prefHeight="35.0" prefWidth="200.0" text="Auteur:*">
+                                             <font>
+                                                <Font name="SansSerif Regular" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="74.0" layoutY="158.0" prefHeight="35.0" prefWidth="200.0" text="Categorie :">
+                                             <font>
+                                                <Font name="SansSerif Regular" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lbltitre" layoutX="247.0" layoutY="58.0" prefHeight="25.0" prefWidth="320.0" textFill="#350fee">
+                                             <font>
+                                                <Font name="SansSerif Bold" size="21.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lblauteur" layoutX="247.0" layoutY="111.0" prefHeight="25.0" prefWidth="316.0" textFill="#350fee">
+                                             <font>
+                                                <Font name="SansSerif Bold" size="21.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lblcateg" layoutX="247.0" layoutY="165.0" prefHeight="25.0" prefWidth="318.0" textFill="#350fee">
+                                             <font>
+                                                <Font name="SansSerif Bold" size="21.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lbltype" layoutX="247.0" layoutY="214.0" prefHeight="25.0" prefWidth="320.0" textFill="#350fee">
+                                             <font>
+                                                <Font name="SansSerif Bold" size="21.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Label layoutX="171.0" layoutY="21.0" prefHeight="35.0" prefWidth="200.0" text="Reference Ouvrage " textFill="#2108c3">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="txtsearch" layoutX="344.0" layoutY="17.0" maxWidth="276.0" minWidth="276.0" prefHeight="31.0" prefWidth="276.0">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font></JFXTextField>
+                                    <JFXButton layoutX="633.0" layoutY="31.0" onAction="#affiche_datail" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #39A67F;" text="Chercher" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font></JFXButton>
+                                 </children></AnchorPane>
+                           </left>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Liste des Ouvrage">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane prefHeight="441.0" prefWidth="942.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <left>
+                              <AnchorPane prefHeight="441.0" prefWidth="941.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <TableView fx:id="list_ouvrage" layoutX="118.0" layoutY="79.0" prefHeight="359.0" prefWidth="789.0">
+                                      <columns>
+                                        <TableColumn fx:id="ref" prefWidth="99.0" text="Refrence" />
+                                        <TableColumn fx:id="titre" prefWidth="143.0" text="Titre" />
+                                          <TableColumn fx:id="auteur" prefWidth="169.0" text="Auteur" />
+                                          <TableColumn fx:id="categ" prefWidth="189.0" text="Categorie" />
+                                          <TableColumn fx:id="typ" prefWidth="187.0" text="Type" />
+                                      </columns>
+                                       <contextMenu>
+                                          <ContextMenu>
+                                            <items>
+                                              <MenuItem mnemonicParsing="false" onAction="#refresh" text="actualiser" />
+                                                <MenuItem mnemonicParsing="false" onAction="#openmodif" text="Modifier" />
+                                                <MenuItem mnemonicParsing="false" onAction="#supp" text="Supprimer" />
+                                                <MenuItem mnemonicParsing="false" onAction="#openexemple" text="Exemplaire" />
+                                            </items>
+                                          </ContextMenu>
+                                       </contextMenu>
+                                    </TableView>
+                                    <JFXTextField fx:id="txt_recherch" layoutX="225.0" layoutY="20.0" maxWidth="325.0" minWidth="221.0" onKeyReleased="#search" onKeyTyped="#search" prefHeight="43.0" prefWidth="325.0" promptText="Write To Search" unFocusColor="#1cbc71">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="15.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXButton fx:id="btnmodif" layoutX="15.0" layoutY="111.0" onAction="#openmodif" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #00F;" text="Modifier" textFill="WHITE">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="13.0" />
+                                       </font></JFXButton>
+                                    <JFXButton fx:id="btnsupp" layoutX="14.0" layoutY="163.0" onAction="#supp" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: #00F;" text="Supprimer" textFill="WHITE">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="13.0" />
+                                       </font></JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="550.0" layoutY="42.0" onAction="#searche" prefHeight="25.0" prefWidth="96.0" ripplerFill="WHITE" style="-fx-background-color: #00F;" text="Chercher" textFill="WHITE">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="btnimp" layoutX="15.0" layoutY="282.0" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #00F;" text="Imprimer" textFill="WHITE">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="btnexemp" layoutX="15.0" layoutY="221.0" onAction="#openexemple" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #00F;" text="Exemplaire" textFill="WHITE">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children></AnchorPane>
+                           </left>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

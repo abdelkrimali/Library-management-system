@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="430.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Modifier_livreController">
+   <children>
+      <BorderPane prefHeight="409.0" prefWidth="670.0">
+         <top>
+            <AnchorPane prefHeight="431.0" prefWidth="695.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="61.0" layoutY="48.0" prefHeight="296.0" prefWidth="517.0" style="-fx-border-color: #000099;">
+                     <children>
+                        <TextField fx:id="txt_auteur" layoutX="214.0" layoutY="96.0" prefHeight="35.0" prefWidth="250.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txt_titre" layoutX="214.0" layoutY="41.0" prefHeight="35.0" prefWidth="250.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <ComboBox fx:id="cbx_categ" editable="true" layoutX="214.0" layoutY="162.0" prefHeight="35.0" prefWidth="250.0" promptText="Selectioner une  departement" />
+                        <Label layoutX="21.0" layoutY="42.0" prefHeight="35.0" prefWidth="178.0" text="Titre :">
+                           <font>
+                              <Font name="SansSerif Regular" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="88.0" prefHeight="35.0" prefWidth="179.0" text="Auteur:">
+                           <font>
+                              <Font name="SansSerif Regular" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="18.0" layoutY="162.0" prefHeight="35.0" prefWidth="185.0" text="Categorie :">
+                           <font>
+                              <Font name="SansSerif Regular" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="18.0" layoutY="226.0" prefHeight="35.0" prefWidth="168.0" text="Type :">
+                           <font>
+                              <Font name="SansSerif Regular" size="18.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="cbx_type" editable="true" layoutX="214.0" layoutY="226.0" prefHeight="35.0" prefWidth="250.0" promptText="Selectioner une  departement" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="640.0" layoutY="-2.0" onMouseClicked="#close" prefHeight="32.0" prefWidth="31.0" text="X" textFill="#fc0808">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbllivre" layoutX="213.0" prefHeight="19.0" prefWidth="199.0" style="-fx-background-color: #00F;" text="Java Programming" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="19.0" prefWidth="213.0" style="-fx-background-color: #00F;" text="EDITION DES INFORMATION DE   " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblnum" layoutX="412.0" prefHeight="19.0" prefWidth="145.0" style="-fx-background-color: #00F;" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="230.0" layoutY="364.0" onAction="#modifier" prefHeight="31.0" prefWidth="205.0" style="-fx-background-color: #ff471a;" text="Conserver les modifications">
+                     <font>
+                        <Font name="Times New Roman Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

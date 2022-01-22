@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="257.0" prefWidth="322.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoadingController">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <Circle fx:id="c1" fill="#c3b9c2" radius="114.0" stroke="#0b2be1" strokeType="INSIDE" strokeWidth="12.0" style="-fx-stroke-dash-array: 50;" />
+            <Circle fx:id="c2" fill="#828486" radius="69.0" stroke="#ff0404" strokeType="INSIDE" strokeWidth="7.0" style="-fx-stroke-dash-array: 70;" />
+            <Circle fx:id="c3" fill="#171717" radius="32.0" stroke="#da4d07" strokeType="INSIDE" strokeWidth="5.0" style="-fx-stroke-dash-array: 20;" />
+         </children>
+      </StackPane>
+   </children>
+</HBox>
